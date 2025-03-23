@@ -46,6 +46,7 @@ def operations_math(func, number_list):
     answer_list = [func(number) for number in number_list]
     return answer_list
 
+
 # ----> Task 08 <----
 operators_dic = {
     'add': lambda x, y: x + y,
@@ -56,18 +57,19 @@ operators_dic = {
 
 }
 
+
 def math(operator, num1, num2):
     if operator in operators_dic:
         return operators_dic[operator](num1, num2)
     return "Error: Invalid operator"
 
+
 # ----> Task 09 <----
 def sum_of_calculations(list_, literal):
-    return sum([func(literal) for func in list_ ]) 
+    return sum([func(literal) for func in list_])
+
 
 # operators_list = [lambda x: x + 10, lambda x: x - 10, lambda x: x * 10, lambda x: x // 10, lambda x: x ** 3]
 # ----> Task 10 <----
 def bool_list(func, list_: list):
     return [item if func(item) else None for item in list_]
-
-

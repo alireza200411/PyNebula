@@ -26,7 +26,15 @@ lentgh = lambda string: len(string)
 ifChar = lambda string, charakter: True if charakter in string else False
 
 # ----> Task 10 <----
-capital = lambda phrase: phrase.capitaliza()
+capital = lambda phrase: phrase.upper()
 
+# ----> Task 11 <----
+list1 = [2, -4, 37, 12, 59, 0.5, 6]
+answer1 = list(map(lambda x: x ** 2, list1))
 
+# ----> Task 12 <----
+list2 = [0, -1, 6, 72, -0.25, 46, 900, -9]
+answer2 = list(filter(lambda x: x % 2 == 0, list2))
+
+# ----> Task 13 <----
 
